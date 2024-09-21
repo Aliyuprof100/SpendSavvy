@@ -5,9 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpendSavvy</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to SpendSavvy</h1>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1>SpendSavvy</h1>
+                <div class="nav-links">
+                    <button class="auth-btn" id="login-btn">Login</button>
+                    <button class="auth-btn" id="register-btn">Register</button>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-slider">
+            <img src="https://via.placeholder.com/1200x400?text=Track+Your+Expenses" alt="Expense Tracking">
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Track Your Expenses Effortlessly</h2>
+            <p>Manage your finances easily by tracking your expenses. Add expenses manually or sync with your bank account for seamless tracking.</p>
+            <button class="cta-btn">Get Started</button>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>📊 Intuitive Expense Tracking</h3>
+                    <p>Keep tabs on your spending with a user-friendly interface.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔗 Bank Integration</h3>
+                    <p>Sync your bank transactions for real-time updates on your spending.</p>
+                </div>
+                <div class="feature">
+                    <h3>📈 Data Visualization</h3>
+                    <p>Get insights into your financial habits with beautiful charts.</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Secure Authentication</h3>
+                    <p>Your data is protected with top-notch security measures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Form -->
+        <div id="login-form" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="cta-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="register-form" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Register</h2>
+                <form>
+                    <label for="reg-username">Username:</label>
+                    <input type="text" id="reg-username" name="reg-username" required>
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" name="reg-email" required>
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" name="reg-password" required>
+                    <button type="submit" class="cta-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SpendSavvy. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
